@@ -9,7 +9,7 @@ class NeuralCoinBlock:
         #concatena os blocos de string
         self.block_data = "-".join(transaction_list) + \
             "-" + previous_block_hash
-        #gera a hash usando a função da bbiblioteca 
+        #gera a hash usando a função da biblioteca 
         self.block_hash = hashlib.sha256(self.block_data.encode()).hexdigest()
 
 #transações
